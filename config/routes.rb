@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   #static pages don't have resources.
   get 'welcome/index'
 
