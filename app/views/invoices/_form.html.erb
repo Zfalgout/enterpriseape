@@ -31,9 +31,9 @@
       </div>
     </div>
     <div class="control-group">
-      <%= f.label :saleperson, class: 'control-label' %><br>
+      <%= f.label :employee_id, class: 'control-label' %>
       <div class="controls">
-        <%= f.text_field :saleperson %>
+        <%= collection_select( :invoice, :employee_id, Employee.all, :id, :name, {}, { :multiple => false}) %>
       </div>
     </div>
     
